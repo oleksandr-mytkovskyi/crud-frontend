@@ -1,6 +1,7 @@
 export default class CrudService {
     constructor() {
-        this._apiBase = 'http://localhost:8080/api/tutorials/';
+        // this._apiBase = 'http://localhost:8080/api/tutorials/';
+        this._apiBase = 'http://node-env.eba-s8t9eksn.us-east-2.elasticbeanstalk.com/api/tutorials/';
     }
      getResource = async (url) => {
         const res = await fetch(`${this._apiBase}${url}`);
